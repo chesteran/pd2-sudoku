@@ -1,15 +1,30 @@
- #include<iostream>
+#include<iostream>
    using namespace std;
      class Sudoku{
 		    public:        
-			       bool checkUnity(int arr[]);
-				   bool isCorrect();
-				   static const int sudokuSize =81 ;
+			     
+				   static const int sudokuROW =9 ;
+				   static const int sudokuCOL =9 ;
 				   void giveQuestion();
 				   void readIn();
-				   bool  Solvefill(int y);
+				   void checkbgrowin();
+				   void checkbgcolin();
+				   void checkbgcellin();
+				   
+				    int checkbgrow();
+				    int checkbgcol();
+				   int checkbgcell();
+				   
+				   void checkrow();
+				   void checkcol();
+				   void checkcell();
+				   void fillorder();
+				   void fill();
+				   void fillorderinit();
+				   
+				   
 				   void  solve();
-				   int iszeroelement();
+				   
 				   void changeNum(int a,int b);
 				   void changeRow(int a,int b);
 				   void changeCol(int a,int b);
@@ -17,11 +32,13 @@
 				   void flip(int n);
 				   void transform();
 				   void change();
-				   void printOut(bool isAns);  
+				   void printOut();  
+				   
 							  private:
-						          int Map[sudokuSize];
-						          int storeque[sudokuSize];
-						          
-							 
-								  
+						          int Map[sudokuROW][sudokuCOL];
+						          int Order[sudokuROW];
+						          int block[sudokuROW][sudokuCOL];			 
+								  int blockcheck[sudokuROW][sudokuCOL];
+								  int Ans1[sudokuROW][sudokuCOL];
+								  int Ans2[sudokuROW][sudokuCOL];
 								            };
