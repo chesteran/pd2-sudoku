@@ -109,18 +109,18 @@ if(a==0){
 }
    for( i=0;i<=26;i++){
      if(b==1){
-	 for(i=0;i<=26;i++){
+	 
 	 transmap[i]=Map[i+27];
 	 transmap[i+27]=block[i];
 
-	  }
+	  
 	 }
 	 else if(b==2){
-	   for(i=0;i<=26;i++){
+	   
 		      transmap[i]=Map[i+54];
 		         transmap[i+54]=block[i];
 
-				        }
+				        
 
 
 	 }
@@ -134,18 +134,18 @@ if(a==1){
 		      
 		      for(int i=0;i<=26;i++){
 		        if(b==0){
-			          for(i=0;i<=26;i++){
+			          
 					       transmap[i+27]=Map[i];
 					        transmap[i]=block[i];
 
-						          }
+						          
 				     }
 				else if(b==2){
-					        for(i=0;i<=26;i++){
+					       
 						               transmap[i]=Map[i+54];
 						                  transmap[i+54]=block[i];
 
-					                         }
+					                         
 
 
 						      }
@@ -159,17 +159,17 @@ if(a==2){
 	           }
 	               for(int i=0;i<=26;i++){
 		                 if(b==0){
-		                       for(i=0;i<=26;i++){
+		                       
 		                            transmap[i+54]=Map[i];
 		                             transmap[i]=block[i];
 
-		                                   }
+		                                   
 		                      }
 		                 else if(b==1){
-		                             for(i=0;i<=26;i++){
+		                            
 		                                        transmap[i+54]=Map[i+27];
 		                                           transmap[i+27]=block[i];
-		                                   }
+		                                   
 
 
 		                               }
