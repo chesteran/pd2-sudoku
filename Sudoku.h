@@ -18,7 +18,7 @@
 				   void transform();
 				   void change();
 				   void printOut(bool isAns);  
-				   int transmap[sudokuSize];
+				   
                                    void transMap();
 							  private:
 						          int Map[sudokuSize];
